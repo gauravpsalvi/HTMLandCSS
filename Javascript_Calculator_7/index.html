@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebecca Moses Dmello">
+        <title>Javascript Arithmetic Operator</title>
+        <!--External Style sheets and Javascript files-->
+        <link rel="stylesheet" href="css/styles.css"> 
+        <script type="text/javascript" src="js/calculation.js"></script> 
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Arithmetic Operator</h1>
+        </header>
+        <article>
+            <section>
+                <form action="" method="GET">
+                    <fieldset>
+                        <h1>My Calculator</h1>
+                        <fieldset>
+                            <legend>Output</legend>
+                            <output>
+                                <label for="result"></label>
+                                <textarea name="result" id="result" rows="6" cols="87"></textarea>
+                            </output>
+                        </fieldset>
+                        <fieldset >
+                            <legend>Input</legend>
+                            <div>
+                                <label for="ope1">Operand 1:</label><br>
+                                <input type="text" id="ope1" name="ope1" autofocus required>
+                            </div>
+                            <div>
+                                <label for="ope2">Operand 2:</label><br>
+                                <input type="text" id="ope2" name="ope2"  required>
+                            </div>
+                            <div>
+                                <input type="button" class="add" name="add" id="add" value=" + " onclick="generateAdd()">
+                                <input type="button" class="sub" name="sub" id="sub" value=" - " onclick="generateSub()">
+                            </div>
+                            <div>
+                                <input type="button" class="mul" name="mul" id="mul" value=" &#215; " onclick="generateMul()">
+                                <input type="button" class="divide" name="divi" id="divi"  value=" &#247; " onclick="generateDiv()">
+                            </div>
+                            <div>
+                                <input type="button" class="mod" name="mod" id="mod"  value=" % " onclick="generateMod()">
+                                <button type="reset" name="clear" id="clear"> clear </button>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </body>
+</html>

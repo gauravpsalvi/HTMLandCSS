@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation using Javascript</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Author">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/ValidateForm.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>CSIS Survey Form</h1>
+        </header>
+        <article>
+            <form action="" method="GET">
+                <div class="page-data">
+                    <div class="left-content">
+                        <fieldset id="part1" class="column">
+                            <legend>Personal Info</legend>
+                            <div>
+                                <label for="fname">First name:</label>
+                                <input type="text" id="fname" name="fname" placeholder=" John" required>
+                            </div>
+                           <div>
+                                <label for="lname">Last name:</label>
+                                <input type="text" id="lname" name="lname" placeholder=" Doe">
+                           </div>
+                           <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="student@douglascollege.ca" required>
+                            </div>
+                            <div>
+                                <label for="sid">Student ID:</label>
+                                <input type="text" id="sid" name="sid" placeholder=" nnnnnnn"  pattern="\d{7}" required>
+                           </div>
+                           <div>
+                                <label for="status">Domestic/International</label>
+                                <span>
+                                    <input type="radio" name="status" id="status1" value="domestic"> Domestic
+                                    <input type="radio" name="status" id="status2" value="international"> International
+                                </span>
+                            </div>
+                            <div>
+                                <label for="locality">Area of locality</label>
+                                <input type="text" name="locality" id="locality" list="localityList">
+                                <datalist id="localityList">
+                                    <option value="New Westminster">New Westminster</option>
+                                    <option value="Coquitlam">Coquitlam</option>
+                                </datalist>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="right-content">
+                        <fieldset id="part2" class="column">
+                            <legend>Survey</legend>
+                            <div>
+                                <label for="dateJoin">Date Joining College</label>
+                            <input type="date" name="dateJoin" id="dateJoin" placeholder=" yyyy - mm - dd" min="2000-09-01" max="2020-06-30" required>
+                            </div>
+                            <div>
+                                <label for="dept">Department</label>
+                                <input type="text" name="dept" id="dept" list="deptList">
+                                <datalist id="deptList">
+                                    <option value="CSIS">Computing Studies</option>
+                                    <option value="BUS">Business</option>
+                                    <option value="MAR">Marketing</option>
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="ncourses">Number of Courses taken</label>
+                                <input type="number" name="ncourses" id="ncourses" min="1" max="10" step="1" required>
+                            </div>
+                            <div>
+                                <label for="performance">Your current performance(1=poor, 10 great)</label>
+                                <input type="range" id="performance" name="vol" min="1" max="10" step="1">
+                            </div>
+                            <div>
+                                <label for="major">Do you like your major?</label>
+                                <span>
+                                    <input type="radio" name="major" id="major1" value="Yes"> Yes
+                                    <input type="radio" name="major" id="major2" value="No"> No
+                                </span>
+                            </div>
+                            <div>
+                                <label for="experience">Tell me about your experience!</label>
+                                <textarea name="experience" rows="5" cols="30" ></textarea>
+                            </div>
+                        </fieldset>  
+                    </div>
+                </div>
+                <div id="button">
+                    <input type="submit" name="submit" value="Submit Data" onclick="runValidate(this.form);">
+                    <input type="reset" value="Clear Input">
+                </div>
+            </form>
+        </article>
+    </body>
+</html>

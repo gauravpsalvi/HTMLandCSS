@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 80%;
+    margin: auto;    
+    margin-top: 40px;
+}
+
+fieldset{
+    width: 280px;
+    float: left;
+    height: 200px;
+    margin: 10px;
+}
+
+div {
+    max-height: 200px;
+    padding: 10px;
+}
+
+legend{
+    background-color: slategray;
+    padding: 8px;
+    border-radius: 0.5em;
+    color:whitesmoke;
+    margin-left: 10px;
+}
+
+#btnmessage {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(224, 216, 216);
+}
+
+.SmallerSize {
+    font-size: small;
+    width: 50%;
+    height: 40%;
+}
+
+.BorderRadius{
+    border-radius: 20px;
+}
+
+.SepiaFilter{
+    filter: sepia(1);
+}
+
+.col-row {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+
+

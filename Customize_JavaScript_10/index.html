@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Author">
+        <title>Customize Requirements using JS</title>
+
+        <!--External files-->
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/customize.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1><cite>Specify your Requirements</cite></h1>
+            <br>
+            <h2><cite>Coose the following settings and click the button to change the appearance of the container, the image, or the text below it.</cite></h2>
+        </header>
+        <article>
+            <section>
+                <div class="col-row">
+                    <form>
+                        <fieldset>
+                            <legend>Image Selection</legend>
+                            <div>
+                                <span id="status_span">
+                                    <input type="radio" name="imgSet"  value="banana_split" checked>Banana Split<br>
+                                    <input type="radio" name="imgSet"  value="deep-cove">Deep Cove<br>
+                                    <input type="radio" name="imgSet"  value="redPanda">Red Panda
+                                </span>
+                            </div>                     
+                        </fieldset>
+                        <fieldset>
+                            <legend>Image settings</legend>
+                            <div>
+                                <span>
+                                    <input type="checkbox" name="features" value="SmallerSize">Smaller size(50%) <br>
+                                    <input type="checkbox" name="features" value="BorderRadius">Border radius 20px <br>
+                                    <input type="checkbox" name="features" value="SepiaFilter">Sepia filter <br>
+                                </span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Container setting</legend>
+                            <div>
+                                <label>Background color:</label> 
+                                <select id="bgCol">
+                                    <option value="#daa520">Golden Rod</option>
+                                    <option value="#2e8b57">Sea Green</option>
+                                    <option value="#4682b4">Steel Blue</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Font color:</label> 
+                                <select id="fntCol">
+                                    <option value="#8b0000">Dark Red</option>
+                                    <option value="#f5f5f5">Pale White</option>
+                                    <option value="#000000">Black</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Font Style:</label> 
+                                <select id="fntStyle">
+                                    <option value="italic">Italic</option>
+                                    <option value="normal">Normal</option>
+                                    <option value="bold">Bold</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <input type="button" id="btnmessage" value="Apply the Setting" onclick="applyStyles(this.form);" >
+                        </div>
+                    </form>
+                </div>
+                <div id="message" class="hidden col-row">
+                    <figure>
+                        <img  id="imgDisplay" width="70%" height="40%">
+                        <figcaption  id="figid"></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </article>
+    </body>
+</html>

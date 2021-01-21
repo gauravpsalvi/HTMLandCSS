@@ -1,0 +1,48 @@
+/*
+    Name: Rebecca Moses Dmello
+    Student ID: 300322984
+    Reference: Lecture and notes prepared by Professor Bambang
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+fieldset>div{
+    display: flex;   
+    margin: 10px 0;         
+    padding: 20px;    
+}
+
+fieldset>div>*{
+    flex: 1 1 200px;
+}
+
+.field-width {
+    min-width: 70%;
+}
+
+legend{
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#result {
+    display: none;
+    margin-top: 10px;
+}

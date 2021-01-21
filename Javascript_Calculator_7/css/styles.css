@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: gray;
+}
+
+body {
+    background-color: aliceblue;
+    margin: auto;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 30px 4px black;
+}
+
+header {
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+}
+
+section {
+    margin: auto;
+}
+
+form{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+section>form>fieldset>* {
+    margin: 5%;
+} 
+
+section fieldset:first-child {
+    border-radius: 20px 20px 90px 90px;
+    background-color: lightsteelblue;
+} 
+
+textarea {
+    margin: 2%;
+    width: 95%;
+}
+
+input , div {
+    height: 15%;
+}
+
+#ope1 , #ope2 {
+    width: 100%;
+    height: 15%;
+    text-align: left;
+}
+
+button , input {
+    width: 49.5%;
+    text-align: center;
+    height: 15%;
+}
+
+ fieldset > div {
+    padding: 5%;
+} 
+
+legend {
+    background-color: slategray;
+    color: white;
+    margin-left: 5%;
+    padding: 1%;
+}

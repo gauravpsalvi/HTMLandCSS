@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+ * Student Name:            Rebecca Moses Dmello
+ * Student ID:              300322984
+ * Assignment/File Name:    Lab01
+ * 
+ * Description: 
+ * 
+ * This portion describes the File/Assignment
+ * 
+ * References: Lectures Notes by Bambamg Sarif,  Web Programming with HTML5, CSS and JavaScript by John Dean
+ * 
+ * Please make sure you provide the appropriate url references
+ * or any comment for example if you referenced some help you
+ * received from your instructor or some demo code provided in
+ * class.
+ *     
+-->
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebecca Moses Dmello">
+        <title> CSIS 1280 (300322984) - Lab 1 </title>
+    </head>
+    <body>
+        <p>
+            <h1>CSIS 1280 Lab1</h1>
+            <h2>Created by Rebecca Moses Dmello (300322984)</h2>
+            <strong>CSIS 1280:</strong><em> Multimedia Web Development</em> is a first level course where learn <strong><cite>HTML,CSS</cite></strong> and <strong><cite>JavaScript</cite></strong>. It is really <del>
+            cool!</del><ins> Awesome!</ins><br/>The first lab is easy peasy though since we just need to create a simple page with basic html tags.
+        </p>
+        <p>
+            We use <cite>Web Programing by John Dean</cite> as our textbook. Note that I refer the textbook using the &lt;cite&gt; tag.<hr>
+        </p>
+        <p>
+            Below is an example of a JavaScript function that handles an <cite>onChange</cite> event. Notice that JavaScript can be used to change the CSS<br>
+            style and text content of an element.<br>
+            The code shown below is created using <cite>code</cite> and <cite>pre</cite> elements.<br>
+            <br>
+            <pre>
+                function changeBg(){
+            
+                    var index = document.getElementById("colorsel").selectedIndex;
+                    if(index &lt; 1)
+                        alert("please select one of the colors");
+                    else{
+                        var color = obj.options[index].value;
+                        var obj2 =document.getElementById("td_text");
+                        obj2.style="background-color: " + color;
+                        obj2.children[0].textContent = "My color is now " + color;
+                    }
+                }
+            </pre>
+            <hr>
+        </p>
+        <p>
+            The HTML5 standard is maintained by <abbr title="World Wide Web Consortium">W3C.</abbr> Hover your mouse on the W3C <ins>abbr</ins>eviation to know its <ins>d</ins>e<ins>f</ins>i<ins>n</ins>ition. 
+            This is done using the<br>
+            <cite>dfn</cite> and <cite>abbr</cite> elements. Quoting their website, W3C mission is <q>To lead the World Wide Web to its full potential by developing <br>
+            protocols and guidelines that ensure long-term growth for the Web</q>. The quotation in the previous sentence was made using the <cite>q</cite><br> 
+            element.
+        </p>
+        <p>
+            The <cite>blockquote</cite> element is for a block of quotation where you can also put a heading such as shown below
+            <blockquote>
+                <strong>The blockquote</strong><br>
+                <br>
+                The blockquote element represents a section that is quoted from another source. Content inside a blockquote must be <br>
+                quoted from another source, whose address, if it has one, may be cited in the cite attribute. 
+            </blockquote>
+            <hr>
+            <cite>Copyright @ Rebecca Moses Dmello, CSIS 1280 Summer 2020</cite>
+        </p>
+    </body>
+</html>

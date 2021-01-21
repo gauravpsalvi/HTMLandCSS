@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Author">
+        <title>Invoice Generator - JavaScript</title>       
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/invoice.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Event and Object - Invoice Generator </h1>
+        </header>
+        <section>
+            <form id="myform" name="myform" action='' method="get">
+                <fieldset>
+                    <legend>Fruitopia</legend>
+                    <div>
+                        <label for="fruit">Fruit</label>
+                        <input type="text" name="fruit" id="fruit" list="fruitList" class="field-width" required>
+                    </div>    
+                    <div>
+                        <label for="amount">Amount</label>
+                        <input type="number" name="amount" id="amount"  class="field-width" min="1" max="50" step="1" required>
+                    </div>    
+                    <div>
+                        <label for="price">Price per unit</label>
+                        <input type="number" name="price" id="price" class="field-width" min="1.0" max="10.5" step="0.5" required>
+                    </div>         
+                    <div>
+                        <label for="origin">Origin</label>
+                        <input type="radio" name="origin" id="local" value="local" required checked>Local
+                        <input type="radio" name="origin" id="imported" value="imported" required>Imported  
+                        <input type="radio" name="origin" id="unknown" value="unknown" required>Unknown
+                    </div>
+                    <div>
+						<input type="button" name="submit" id="myBttn" class="field-width" value="Add the data" >    
+                    </div>                        
+            </fieldset>
+            </form>
+        </section>
+        <section id="result">
+            <h3>List of Fruits</h3>
+            <textarea id="accumulate" name="accumulate" cols="86" rows="10"></textarea>
+        </section>
+        <footer>
+            &nbsp;
+        </footer>
+    </body>
+</html>
