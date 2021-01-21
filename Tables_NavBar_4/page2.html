@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebecca Moses Dmello (300322984)">
+        <title>Tables and Nav bar</title>
+        <!--External stylesheets-->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/table.css">
+    </head>
+    <body>
+        <header> 
+            <h1 class="backgound-image"> &nbsp;</h1>
+            <figure class="banner-image">
+                <figcaption><h2>Learn Web Development</h2></figcaption>
+                <!--<img src="images/banner.jpg" alt="Banner Image">-->
+            </figure>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html">My Page</a></li>
+                    <li><a href="#">Table & Float</a></li>
+                    <li><a href="http://tiny.cc/csis1280" target="_blank">CSIS 1280</a></li>
+                    <li><a href="http://www.douglascollege.ca" target="_blank">Douglas College</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <section>
+              
+                   <div class="table-content"> 
+                        <table>
+                            <!--table body row groups-->
+                            <thead>
+                                &nbsp;
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="5" id="maze-img"><img src="images/maze.jpg" alt="Maze image"></th>
+                                    <th colspan="4" id="maze-color">It's a Maze</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">You can span down</td>
+                                    <td colspan="3">You can span across</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">It's like a puzzle</td>
+                                    <td rowspan="3" id="border-green">Over here</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">This Way</td>
+                                    <td>That way</td>
+                                </tr>
+                                <tr>
+                                    <td>Where am I?</td>
+                                </tr>
+                            </tbody>
+                        <!--table footer-->
+                            <tfoot>
+                                <tr>
+                                        &nbsp;                                
+                                </tr>
+                            </tfoot>
+                    </table>
+                   </div>
+            </section>
+        </article>
+            <aside>
+                    <div>
+                        <p>
+                            <strong>The Sidebar</strong><br>
+                            The article element containing the table and the aside are floating left with 7.3 width ratio.<br>
+                            <br>
+                            There are two divs inside the sidebar. Each of them are floated left but somehow the second div is below the first div. How did I achieve it eh?<br>
+                            <br>
+                            Also, the border bottom of this div is styled using a pseudo class selector. Cool right!
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <strong>The table maze</strong><br>
+                            The table maze was created by utilizing table's row span and column span.
+                        </p>
+                    </div>
+            </aside>
+       
+        <footer>
+            <cite>CSIS 1280 &copy;, Rebecca Moses Dmello. All Rights Reserved </cite>
+        </footer>
+    </body>
+</html>

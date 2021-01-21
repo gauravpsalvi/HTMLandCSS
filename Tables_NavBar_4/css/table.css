@@ -1,0 +1,74 @@
+table{
+    border: 1px solid black;
+    border-collapse: collapse; 
+    width: 100%;
+}  
+
+td, th{
+    border: 1px solid black; 
+    padding: 10px;
+}
+  
+thead th {
+    color: white; 
+    background-color: orangered;
+}
+
+article {
+    float: left;
+    width: 70%;
+    margin-top: 1%;
+}
+
+aside {
+    width: 30%;
+    float: left;
+    margin-top: 40px;
+    text-align: justify;
+    background-color: orangered;
+    top: 20px;
+}
+
+#maze-color {
+    background-color: orangered;
+    text-align: center;
+    color: white;
+}
+
+#maze-img {
+    text-align: left;
+}
+
+#maze-img img{
+    max-width: 200px;
+    max-height: 200px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#border-green {
+    border: green 3px solid;
+}
+
+.table-content {
+    float: left;
+    padding-left: 30px;
+    width: 100%;
+    padding-right: 20px;
+    background-color: whitesmoke;
+    float: left;
+}
+
+aside p{
+    padding: 10px;
+}
+
+aside div {
+    min-height: 150px;
+    opacity: 0.9;
+}
+
+aside div:first-child {
+    border-bottom: 2px solid black;
+    width: 100%;
+} 

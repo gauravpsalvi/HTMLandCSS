@@ -1,0 +1,142 @@
+/* COMMON CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #5d5c61;
+}
+
+body {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #2d3807;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #222629;
+    color: #86c232;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 40px auto;
+    font-weight: bold;
+    text-align: center;
+    background-color: darkgray;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 11px;
+    background-color: black;
+    color: #86c232;
+}
+nav a:hover {
+    background-color: green;
+    color: whitesmoke;
+}
+
+section {
+    border: 3px double red;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+    text-align: center;
+}
+
+.sidebar {
+    float: left;
+    background-color: #1f2605;
+    color: #d6ce15;
+    height: 400px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #222629;
+    color: whitesmoke;
+}
+
+/* MOBILE */
+[class*="nav"] {
+    flex: 0 0 100%;
+}
+[class*="fea"] {
+    width: 98%;
+    background-color: #e7e3d4;
+    color: #474641;
+    font-size: 10pt;
+    border: 2px dotted darkviolet;
+    height: 80px;
+}
+/* pagebody */
+.main {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+}
+.sidebar {
+    display: none;
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) {
+    [class*="nav"] {
+        flex: 1;
+    }
+    [class*="fea"] {
+        width: 31.33%;
+        background-color: #e7e3d4;
+        color: #474641;
+        font-size: 12pt;
+        border: 3px double red;
+        min-height: 100px;
+    }
+    .main {
+        grid-template-columns: 20% 80%;
+    }
+    .sidebar {
+        display: block;
+    }    
+}
+
+
+/* TABLET */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    [class*="fea"] {
+        width: 48%;
+        background-color: #e7e3d4;
+        color: #474641;
+        font-size: 10pt;
+        border: 2px solid magenta;
+        min-height: 100px;
+    }
+    .last {
+        width: 98%;
+    }
+    .main {
+        grid-template-columns: 20% 80%;
+    }
+    .sidebar {
+        display: block;
+    } 
+}
